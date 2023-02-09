@@ -17,8 +17,8 @@
   </div>
   <header class="landingpage">
     <div class="landingpage-inner">
-      <h1>A world of Endless possiblities</h1>
-      <p>Welcome to our world where imagination meets reality</p>
+      <h1>Admin Dashboard</h1>
+      <p>This task display different data from https://jsonplaceholder.typicode.com/guide/ on the admin page</p>
       <router-link  to="/users" class="btn">Go to users</router-link>
     </div>
   </header>
