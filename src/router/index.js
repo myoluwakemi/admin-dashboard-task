@@ -30,8 +30,8 @@ const routes = [
       },
       {
         path: "album/:userId",
-        name: "AlbumPage",
-        component: () => import("../views/AlbumPage.vue"),
+        name: "AlbumView",
+        component: () => import("../views/AlbumView.vue"),
       },
 
       {

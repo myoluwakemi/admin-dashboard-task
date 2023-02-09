@@ -25,7 +25,7 @@
     </transition>
   </div>
 </template>
-<script>
+<script >
 import { ref, onMounted, computed } from "vue";
 import { useUserStore } from "@/stores/user";
 import { useRoute } from "vue-router";
@@ -33,7 +33,7 @@ import { Timeline, TimelineTitle, TimelineItem } from "vue3-timeline";
 import PictureModal from "@/components/PictureModal.vue";
 import LoaderComp from "@/components/LoaderComp.vue";
 export default {
-  name: "AlbumPage",
+  name: "AlbumView",
   components: {
     Timeline,
     TimelineItem,
@@ -78,36 +78,38 @@ export default {
 .album {
   padding: 1.5rem 2rem;
 }
+
 @media (max-width: 520px) {
-  .album{
+  .album {
     padding: 1.2rem 1rem;
   }
-  
 }
+
 .album img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.modal-body-content span{
+
+.modal-body-content span {
   background: rgba(0, 207, 232, 0.12) !important;
   padding: 0.3rem 0.5rem;
-    text-align: center;
-    border-radius: 0.358rem;
-    color: #00cfe8 !important;
-    text-transform: capitalize;
-    display: flex;
-    justify-content: center;
+  text-align: center;
+  border-radius: 0.358rem;
+  color: #00cfe8 !important;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
 }
+
 .avatar-wrapper {
   height: 110px;
   width: 110px;
   margin-bottom: 1.5rem;
-  
 }
-.avatar-wrapper img{
-  border-radius: 0.357rem !important;
 
+.avatar-wrapper img {
+  border-radius: 0.357rem !important;
 }
 
 .modal-enter-from,
@@ -121,4 +123,3 @@ export default {
   transform: scale(1.1);
 }
 </style>
->

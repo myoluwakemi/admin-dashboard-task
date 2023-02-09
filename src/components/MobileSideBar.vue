@@ -35,7 +35,7 @@ export default {
         {
           icon: "",
           title: "Album",
-          name: "AlbumPage",
+          name: "AlbumView",
         },
         {
           icon: "",
