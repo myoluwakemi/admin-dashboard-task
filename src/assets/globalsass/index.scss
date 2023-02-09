@@ -91,7 +91,30 @@ a {
 .nav-icon {
   margin-right: 1.4rem;
 }
+.header-menu-toggler{
+  visibility: hidden;
+}
 
 .nav-links-container span {
   text-transform: capitalize;
+}
+@media (max-width: 1200px) {
+  .main-menu {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .navbar {
+    top: 0;
+    width: calc(100vw - (100vw - 100%) - calc(2rem * 2) - 0px);
+
+   
+  }
+     .header-menu-toggler {
+       visibility: visible;
+       cursor: pointer;
+     }
 }

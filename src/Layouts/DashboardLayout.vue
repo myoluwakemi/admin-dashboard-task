@@ -4,7 +4,7 @@
       <div className="nav-links-container">
         <div v-for="item in menu" :key="item">
           <router-link
-          ro
+            ro
             class="nav-link"
             :to="{
               name: `${item.name}`,
@@ -19,6 +19,7 @@
     </div>
     <div class="content">
       <div class="navbar">
+        <span @click="showSideBar = true" class="header-menu-toggler"> &#10006; </span>
         <router-link class="home-route" to="/">Home</router-link>
         <router-link to="/users">User</router-link>
       </div>
@@ -27,19 +28,28 @@
         <router-view v-slot="{ Component }">
           <transition name="fade">
             <component :is="Component" />
-        
           </transition>
-        
         </router-view>
       </div>
     </div>
+    <mobile-component v-if="showSideBar" @close="showSideBar = false"  />
+
+   
   </div>
+  
 </template>
 <script>
+import MobileComponent from "../components/MobileSideBar.vue"
+import {ref} from "vue"
+
+
 export default {
   name: "DashboardLayout",
+  components: {MobileComponent},
+  
   data() {
     return {
+      
       menu: [
         {
           icon: "",
@@ -59,19 +69,26 @@ export default {
       ],
     };
   },
+  setup(){
+    const showSideBar = ref(false)
+    return {
+      showSideBar
+    }
+  }
+ 
 };
 </script>
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .4s;
+  transition: opacity 0.4s;
 }
 
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
 }
-.home-route{
+.home-route {
   margin-right: 2rem;
 }
 </style>
