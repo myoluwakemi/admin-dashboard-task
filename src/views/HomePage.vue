@@ -8,7 +8,7 @@
       <div>
         <div>
           <ul>
-            <li><router-link to="/">Home</router-link></li>
+            <li @click="closeModal" :class="{'close': active}"><router-link  to="/">Home</router-link></li>
             <li><router-link to="/users">Users</router-link></li>
           </ul>
         </div>
@@ -19,17 +19,29 @@
     <div class="landingpage-inner">
       <h1>A world of Endless possiblities</h1>
       <p>Welcome to our world where imagination meets reality</p>
-      <router-link to="/users" class="btn">Feed Your Curiosity</router-link>
+      <router-link  to="/users" class="btn">Feed Your Curiosity</router-link>
     </div>
   </header>
 </template>
 
 <script>
+import {ref} from 'vue'
 export default {
   name: "HomePage",
+
+  setup(){
+    const active = ref(false)
+    function closeModal (){
+        active.value = !active.value
+    }
+    return {
+        closeModal, active
+    }
+
+  }
 };
 </script>
-<style scoped>
+<style  scoped >
 .landingpage-inner {
   max-width: 960px;
   margin: auto;

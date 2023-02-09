@@ -1,6 +1,7 @@
 <template>
   <div class="post-wrapper">
     <loader-comp v-if="loading"/>
+    
     <timeline v-for="post in getPost" :key="post.id">
       <timeline-title>{{ post.title }}</timeline-title>
       <timeline-item bg-color="#000">{{ post.body }}</timeline-item>

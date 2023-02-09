@@ -24,7 +24,13 @@
       </div>
       <div className="header-navbar-shadow"></div>
       <div class="routes-wrapper">
-        <router-view />
+        <router-view v-slot="{ Component }">
+          <transition name="fade">
+            <component :is="Component" />
+        
+          </transition>
+        
+        </router-view>
       </div>
     </div>
   </div>
@@ -56,6 +62,15 @@ export default {
 };
 </script>
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .4s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 .home-route{
   margin-right: 2rem;
 }

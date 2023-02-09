@@ -29,6 +29,7 @@
       <tr v-for="item in filteredList" :key="item">
         <td @click="$emit('gotoAdmin', item.id)" v-for="field in fields" :key="field">{{ item[field] }}</td>
       </tr>
+      <tr v-if="filteredList.length === 0"><div class="empty-list" >Network issues or list is empty</div></tr>
     </tbody>
   </table>
 </template>
@@ -97,6 +98,9 @@ table tr:hover {
 }
 .table{
   box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+}
+.empty-list{
+  text-align: center;
 }
 .input-group{
   width: 30% !important;
