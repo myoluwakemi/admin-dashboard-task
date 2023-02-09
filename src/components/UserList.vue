@@ -25,7 +25,7 @@
       </tr>
     </thead>
     <tbody>
-      <!-- Loop through the list get the each student data -->
+      <!-- Loop through the list get the each user data -->
       <tr v-for="item in filteredList" :key="item">
         <td @click="$emit('gotoAdmin', item.id)" v-for="field in fields" :key="field">{{ item[field] }}</td>
       </tr>
