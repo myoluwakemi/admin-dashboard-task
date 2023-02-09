@@ -1,26 +1,49 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <main>
+  
+  <div class="view">
+    <RouterView/>
+
+  </div>
+ </main>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import LandingPageHeader from './components/LandingPageHeader.vue'
+
+
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    // LandingPageHeader
+   
+}
 }
 </script>
 
 <style>
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap";
+@import './assets/globalsass/index.scss';
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+ 
+}
+</style>
+<style>
+.active {
+  color: #42b983;
+}
+
+.exact-active-link {
+  color: #42b983;
+  font-weight: bold;
 }
 </style>
