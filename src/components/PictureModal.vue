@@ -20,9 +20,9 @@ export default {
   setup() {},
   props: {
     details: {
-        type: Object
-    }
-  }
+      type: Object,
+    },
+  },
 };
 </script>
 <style scoped>
@@ -44,7 +44,7 @@ export default {
 }
 
 .modal-container {
-  width: 300px;
+  max-width: 500px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;
@@ -60,6 +60,9 @@ export default {
 
 .modal-body {
   margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>> 
 
