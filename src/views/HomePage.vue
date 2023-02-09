@@ -19,7 +19,7 @@
     <div class="landingpage-inner">
       <h1>A world of Endless possiblities</h1>
       <p>Welcome to our world where imagination meets reality</p>
-      <router-link  to="/users" class="btn">Feed Your Curiosity</router-link>
+      <router-link  to="/users" class="btn">Go to users</router-link>
     </div>
   </header>
 </template>
