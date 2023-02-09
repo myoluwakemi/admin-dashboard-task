@@ -96,6 +96,9 @@ table th:hover {
 table tr:hover {
   background: #f2f2f2;
 }
+table tr{
+  cursor: pointer;
+}
 .table{
   box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
 }
