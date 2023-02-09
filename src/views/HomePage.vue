@@ -19,7 +19,7 @@
     <div class="landingpage-inner">
       <h1>A world of Endless possiblities</h1>
       <p>Welcome to our world where imagination meets reality</p>
-      <a href="#learnmore" class="btn">Feed Your Curiosity</a>
+      <router-link to="/users" class="btn">Feed Your Curiosity</router-link>
     </div>
   </header>
 </template>
@@ -90,11 +90,12 @@ landing page so that the text can be at the centre*/
   text-decoration: none;
   color: white !important;
   border: none;
-    background: linear-gradient(to right, red, yellow);
+    background: #000;
   padding: 0.8rem 2rem;
   margin-top: 2rem;
   border-radius: 20px;
   transition: 4s ease;
+  font-weight: bold;
 }
 
 /*hover effect*/
