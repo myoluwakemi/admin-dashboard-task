@@ -4,12 +4,8 @@
       <router-view v-slot="{ Component }">
         <transition name="fade">
           <component :is="Component" />
-
         </transition>
-
       </router-view>
-   
-      
     </div>
   </main>
 </template>
@@ -37,7 +33,7 @@ export default {
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .4s;
+  transition: opacity 0.4s;
 }
 
 .fade-enter,
@@ -47,6 +43,11 @@ export default {
 
 .exact-active-link {
   font-weight: bold;
+  box-shadow: 0 0 10px 1px #000;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff !important;
+  transition: transform 0.25s ease;
 }
 </style>
 

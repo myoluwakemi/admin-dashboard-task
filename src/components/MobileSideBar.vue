@@ -57,7 +57,7 @@ export default {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
   transition: 0.4s transform ease;
 }
 .sidebar {

@@ -82,11 +82,8 @@ a {
   margin-bottom: 1rem;
 }
 .nav-link:hover {
-  box-shadow: 0 0 10px 1px #000;
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #fff !important;
-  transition: transform 0.25s ease;
+  font-weight: bold;
+ 
 }
 .nav-icon {
   margin-right: 1.4rem;
