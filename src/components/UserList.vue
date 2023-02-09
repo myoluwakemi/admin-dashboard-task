@@ -90,6 +90,9 @@ export default {
 };
 </script>
 <style scoped>
+table th{
+  text-transform: capitalize;
+}
 table th:hover {
   background: #f2f2f2;
 }
