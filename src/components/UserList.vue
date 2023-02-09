@@ -101,6 +101,7 @@ table tr:hover {
 }
 table tr{
   cursor: pointer;
+  line-height: 2;
 }
 .table{
   box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
