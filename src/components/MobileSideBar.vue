@@ -68,6 +68,5 @@ export default {
   width: 260px;
   background: #fff;
 }
-.active {
-}
+
 </style>
