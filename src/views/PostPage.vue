@@ -50,4 +50,10 @@ export default {
 .post-wrapper{
   padding: 1.5rem 2rem;
 }
+@media (max-width: 520px) {
+  .post-wrapper {
+    padding: 1.2rem 0.8rem;
+  }
+
+}
 </style>

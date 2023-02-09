@@ -19,7 +19,7 @@
     </div>
     <div class="content">
       <div class="navbar">
-        <span @click="showSideBar = true" class="header-menu-toggler"> &#10006; </span>
+        <span @click="showSideBar = true" class="header-menu-toggler"> &#8801; </span>
         <router-link class="home-route" to="/">Home</router-link>
         <router-link to="/users">User</router-link>
       </div>

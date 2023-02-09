@@ -78,6 +78,12 @@ export default {
 .album {
   padding: 1.5rem 2rem;
 }
+@media (max-width: 520px) {
+  .album{
+    padding: 1.2rem 1rem;
+  }
+  
+}
 .album img {
   width: 100%;
   height: 100%;
