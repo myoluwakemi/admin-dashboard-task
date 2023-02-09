@@ -19,7 +19,7 @@
           <div class="avatar-wrapper">
             <img :src="albumDetail.url" />
           </div>
-          <span>User</span>
+          <span>UserImage : {{ albumDetail.id }}</span>
         </div>
       </picture-modal>
     </transition>
@@ -50,7 +50,6 @@ export default {
 
     function toggleModal(album) {
       showModal.value = true;
-      console.log(album);
       albumDetail.value = album;
     }
 
