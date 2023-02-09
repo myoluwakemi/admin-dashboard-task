@@ -91,7 +91,7 @@ a {
 .nav-icon {
   margin-right: 1.4rem;
 }
-.header-menu-toggler{
+.header-menu-toggler {
   visibility: hidden;
 }
 
@@ -110,11 +110,10 @@ a {
   .navbar {
     top: 0;
     width: calc(100vw - (100vw - 100%) - calc(2rem * 2) - 0px);
-
-   
   }
-     .header-menu-toggler {
-       visibility: visible;
-       cursor: pointer;
-     }
+  .header-menu-toggler {
+    visibility: visible;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
 }
